@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto SAMI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('static/fondo3.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .container {
+            width: 90%;
+            max-width: 600px;
+            margin: 20px auto;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            position: relative;
+        }
+        .back-to-top {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #337ab7;
+            color: #ffffff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            text-align: center;
+        }
+        .back-to-top:hover {
+            background-color: #286090;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .header img {
+            width: 45%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .header p {
+            width: 50%;
+            text-align: left;
+            margin: 0;
+        }
+        .section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            gap: 10px;
+        }
+        .section:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+        .section img {
+            width: 45%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .section p {
+            width: 50%;
+            text-align: left;
+            margin: 0;
+        }
+        .button-long {
+            display: block;
+            background-color: #337ab7;
+            color: #ffffff;
+            padding: 15px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            width: 100%;
+            margin: 10px 0;
+        }
+        .button-long:hover {
+            background-color: #286090;
+        }
+        .footer {
+            font-size: 2em;
+            color: #666;
+            text-align: center;
+            margin-top: 20px;
+        }
+        @media (max-width: 600px) {
+            .header,
+            .section {
+                flex-direction: column;
+                text-align: center;
+            }
+            .header img,
+            .section img {
+                width: 100%;
+            }
+            .header p,
+            .section p {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Botón "Volver arriba" con el mismo estilo que el de la encuesta -->
+        <a href="#top" class="back-to-top">Volver arriba</a>
+
+        <div class="header" id="top">
+            <p>Este jueves 28 de noviembre daremos a conocer el primer prototipo de "SAMI" en INACAP Talca. ¡No olvides venir a visitarnos!</p>
+            <img src="static/inacap.jpg" alt="INACAP Talca">
+        </div>
+
+        <div class="section">
+            <a href="https://forms.office.com/r/nPdksEckaG" class="button-long">Responder encuesta sobre el proyecto "SAMI"</a>
+        </div>
+
+        <div class="section">
+            <img src="static/talca.jpg" alt="Vista de Talca">
+            <p>Pronto tendremos una nueva sucursal. Encuéntranos en el corazón de Talca, cerca de "Plaza de Armas". ¡Te esperamos con muchas sorpresas!</p>
+        </div>
+
+        <div class="footer">
+            <p>¡Más información disponible pronto!</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ContaMatt</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('static/fondo.jpg'); /* Fondo general */
+      background-size: cover; /* Cubre toda la pantalla */
+      background-repeat: no-repeat;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: white;
+    }
+
+    .container {
+      width: 400px;
+      min-height: 600px;
+      border: 1px solid rgba(255, 255, 255, 0.3); /* Borde sutil */
+      border-radius: 15px;
+      background-image: url('static/gato.jpg'); /* Fondo del contenedor */
+      background-size: cover; /* Cubre todo el contenedor */
+      background-repeat: no-repeat;
+      background-position: center;
+      text-align: center;
+      padding: 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra más clara */
+      position: relative;
+      color: black; /* Cambiar el color del texto a negro */
+    }
+
+    .container h1, .container h2, .container p {
+      z-index: 2; /* Para que se vean sobre el fondo */
+      margin-top: 50px; /* Mover el contenido un poco más abajo */
+    }
+
+    .container h1 {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 20px 0;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8); /* Sombra de texto */
+    }
+
+    .container h2 {
+      font-size: 18px;
+      margin-top: 80px;
+      margin-bottom: -50px;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+    }
+
+    .container p {
+      font-size: 16px;
+      margin-bottom: 10px;
+      line-height: 1.5;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+    }
+
+    .info {
+      font-size: 14px;
+      margin-top: 0px;
+      background-color: rgba(255, 255, 255, 0.2); /* Fondo translúcido */
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Sombra */
+    }
+
+    .info a {
+      color: #00aced; /* Azul brillante */
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .info a:hover {
+      text-decoration: underline;
+    }
+
+    .arrow-icon {
+      position: absolute;
+      bottom: 100px; /* Mueve la flecha hacia la parte inferior */
+      right: 120px; /* Mueve la flecha hacia la derecha */
+      z-index: 3; /* Asegura que la flecha esté encima de otros elementos */
+    }
+
+    .arrow-icon a {
+      background: transparent; /* Sin fondo para que solo se vea la flecha */
+      border: none; /* Eliminar borde */
+      padding: 0; /* Eliminar cualquier relleno extra */
+      cursor: pointer; /* Cambiar el cursor cuando pase sobre el botón */
+      transition: transform 0.2s; /* Efecto de transición cuando se hace hover */
+    }
+
+    .arrow-icon a:hover {
+      transform: scale(1.1); /* Efecto de agrandamiento cuando se pasa el mouse sobre la flecha */
+    }
+
+    .arrow-icon img {
+      width: 40px; /* Ajustar el tamaño de la imagen */
+      height: auto; /* Mantener la proporción */
+    }
+
+    /* Estilos para el botón "Volver atrás" */
+    .button-back {
+      position: absolute;
+      top: 20px; /* Ubicado 20px desde la parte superior */
+      left: 20px; /* Ubicado 20px desde la parte izquierda */
+      display: inline-block;
+      text-decoration: none;
+      color: white;
+      background-color: #0055A4;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    .button-back:hover {
+      background-color: #003f7f;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Botón "Volver atrás" en la parte superior izquierda -->
+    <a href="index.html" class="button-back">Volver atrás</a>
+
+    <h2>¿Dónde conseguir a SAMI?</h2>
+    <p>
+      Actualmente nos encontramos desarrollando este proyecto para facilitar la gestión de todas las empresas.
+      Te informaremos cuando se encuentre disponible.
+    </p>
+    <div class="info">
+      <p>Si tienes más dudas acerca de nuestro proyecto, contáctanos:</p>
+      <p>Correo electrónico: <a href="mailto:contamatt.24@gmail.com">contamatt.24@gmail.com</a></p>
+      <p>Instagram: <a href="https://instagram.com/conta.matt" target="_blank">@conta.matt</a></p>
+    </div>
+    <!-- Botón de flecha -->
+    <div class="arrow-icon">
+      <a href="comofuncionasami.html">
+        <img src="static/flechaizquierda.png" alt="Regresar">
+      </a>
+    </div>
+  </div>
+</body>
+</html>

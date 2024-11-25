@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ContaMatt</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('static/fondo.jpg'); /* Fondo general */
+      background-size: cover; /* Cubre toda la pantalla */
+      background-repeat: no-repeat;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: white;
+    }
+
+    .container {
+      width: 400px;
+      min-height: 600px;
+      border: 1px solid rgba(255, 255, 255, 0.3); /* Borde sutil */
+      border-radius: 15px;
+      background-image: url('static/gato.jpg'); /* Fondo del contenedor */
+      background-size: cover; /* Cubre todo el contenedor */
+      background-repeat: no-repeat;
+      background-position: center;
+      text-align: center;
+      padding: 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra más clara */
+      position: relative;
+      color: black; /* Cambiar el color del texto a negro */
+    }
+
+    .container h1, .container h2, .container p {
+      z-index: 2; /* Para que se vean sobre el fondo */
+      margin-top: 20px; /* Menos espacio arriba de los títulos y párrafos */
+      margin-bottom: 10px; /* Menos espacio entre los párrafos */
+    }
+
+    .container h1 {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 20px 0;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8); /* Sombra de texto */
+    }
+
+    .container h2 {
+      font-size: 18px;
+      margin-top: 80px;
+      margin-bottom: 20px;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+    }
+
+    .container p {
+      font-size: 16px;
+      margin-bottom: 8px; /* Reducir el margen inferior */
+      line-height: 1.4; /* Reducir el espacio entre líneas */
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+    }
+
+    .info {
+      font-size: 10px;
+      margin-top: 0px;
+      background-color: rgba(255, 255, 255, 0.2); /* Fondo translúcido */
+      padding: 0px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Sombra */
+    }
+
+    .info a {
+      color: #00aced; /* Azul brillante */
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .info a:hover {
+      text-decoration: underline;
+    }
+
+    .arrow-icon {
+        position: absolute;
+        bottom: 150px; /* Mueve la flecha hacia la parte inferior */
+        right: 120px; /* Mueve la flecha hacia la derecha, 20px desde el borde derecho */
+        z-index: 3; /* Asegura que la flecha esté encima de otros elementos */
+    }
+
+    .arrow-icon button {
+      background: transparent; /* Sin fondo para que solo se vea la flecha */
+      border: none; /* Eliminar borde */
+      padding: 0; /* Eliminar cualquier relleno extra */
+      cursor: pointer; /* Cambiar el cursor cuando pase sobre el botón */
+      transition: transform 0.2s; /* Efecto de transición cuando se hace hover */
+    }
+
+    .arrow-icon button:hover {
+      transform: scale(1.1); /* Efecto de agrandamiento cuando se pasa el mouse sobre la flecha */
+    }
+
+    .arrow-icon img {
+      width: 30px; /* Tamaño ajustado */
+      height: auto; /* Mantiene la proporción */
+    }
+
+    /* Estilo para la flecha derecha */
+    .arrow-right {
+      position: absolute;
+      bottom: 150px;
+      right: 60px; /* Ubicar la flecha a la derecha de la flecha izquierda */
+      z-index: 3;
+    }
+
+    .arrow-right button {
+      background: transparent; /* Sin fondo para que solo se vea la flecha */
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      transition: transform 0.2s; /* Efecto de transición cuando se hace hover */
+    }
+
+    .arrow-right button:hover {
+      transform: scale(1.1); /* Efecto de agrandamiento */
+    }
+
+    .arrow-right img {
+      width: 30px; /* Tamaño ajustado */
+      height: auto; /* Mantiene la proporción */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>¿Cómo funciona SAMI?</h2> <!-- Título actualizado -->
+    <p>
+        Configura SAMI fácilmente: Conecte SAMI a una fuente de energía con el cable proporcionado y deje que cargue completamente antes del primer uso, pase los datos desde una plataforma (Ej: Exel) a la aplicación móvil "SAMI Assistant" y conectelo a su telefono.
+    </p>
+    <p>
+        Configure comandos simples:
+        "SAMI, registra 10 unidades de producto A."
+        "SAMI, ¿cuál es el resumen de ventas de hoy?"
+    </p>
+    <p>
+        Obtenga informes claros: Visualice sus datos desde la aplicación asociada.
+    </p>
+    <div class="arrow-icon">
+        <a href="contamat.html">
+          <button class="back-btn">
+            <img src="static/flechaizquierda.png" alt="Regresar">
+          </button>
+        </a>
+    </div>
+
+    <!-- Flecha derecha -->
+    <div class="arrow-right">
+        <a href="dondeconseguirsami.html">
+          <button class="next-btn">
+            <img src="static/flechaderecha.png" alt="Siguiente">
+          </button>
+        </a>
+    </div>
+  </div>
+</body>
+</html>
